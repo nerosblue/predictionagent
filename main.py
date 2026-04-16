@@ -60,6 +60,3 @@ def predict(data: dict):
         "date": str(date.date()),
         "predicted_price": float(prediction)
     }
-    @app.get("/")
-def home():
-    return {"status": "Model API is running", "message": "Use the /predict endpoint for house prices."}
